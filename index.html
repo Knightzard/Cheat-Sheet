@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>HTML & CSS Cheat Sheet</h1>
+    </div>
+    <!--HTML Explanation-->
+    <div>
+        <h2>What is HTML?</h2>
+        <p>HTML stands for <span class="stands">Hypertext Markup Language</span>. It is the first step to build a website and its the skeleton of all web pages. HTML provides structure to the content on a website, including, text, images, and videos.</p>
+        <p><span class="stands">Markup</span> language is a computer language that defines the structure and presentation of raw text. <span class="stands">Hypertext</span> is a text displayed on a computer or device that provides access to other text through links, also known as Hyperlink</p>
+    </div>
+
+    <!--CSS Explanation-->
+    <div>
+        <h2>What is CSS?</h2>
+        <p>CSS stands for <span class="stands">Cascading Stylesheet</span>. It is the language that provide styles to the content of HTML page. This style includes colors, fonts, positioning, layout, and many more!</p>
+        <h3>Why do we need to separate language for content and presentation?</h3>
+        <p>This is because it is easier to maintain when each section has a clearly differentiated problems that it is trying to solve.</p>
+    </div>
+
+    <!--Table content for HTML-->
+     
+    <div>
+        <table>
+        <caption class="center">HTML Element</caption>  
+        <!--Table Head-->     
+        <thead>
+            <tr>
+                <th class="tagtable">Tag</th>
+                <th class="nametable" scope="col">Element Name</th>
+                <th class="descriptiontable" scope="col">Description</th>
+            </tr>
+        </thead>
+        <!--Table Body-->
+        <tbody>
+            <tr>
+                <td class="tagtable">&lt;!-- . . . --&gt;</td>
+                <td>Comment</td>
+                <td>To insert comments in the source code. It does not displayed in the browsers. Makes it easier to read code if there is a comment to explain it.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;!DOCTYPE HTML&gt;</td>
+                <td class="nametable">Opening</td>
+                <td>HTML documents must start with a &lt;!DOCTYPE&gt; declaration. It is an information to the browser about what document type to expect.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;html&gt;. . .&lt;/html&gt;</td>
+                <td class="nametable">HTML Tag</td>
+                <td>Represent the root of an HTML document. Without these tags, it's impossible that browsers could incorrectly interpret your HTML code.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;head&gt;. . .&lt;/head&gt;</td>
+                <td class="nametable">Head</td>
+                <td>A container for metadata (data about the HTML document) and is placed between &lt;html&gt; tag and &lt;body&gt; tag. <br>The following elements can go inside &lt;head&gt; element: <span class="bolds">&lt;title&gt;, &lt;style&gt;, &lt;base&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;script&gt;, and &lt;non-script&gt;</span>.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;title&gt;. . .&lt;/title&gt;</td>
+                <td class="nametable">Title</td>
+                <td>The title of the document. Must be text-only, and shown in the browser's title bar or in the page's tab. It is required in HTML documents!, because it's very important for Search Engine Optimization (SEO) algorithms to decide the order when listing pages in search results.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;</td>
+                <td class="nametable">Link</td>
+                <td>The relationship between the current document and an external source. It is most often used to link an external style sheets to your website. <br><span class="bolds">It is an empty element, it contains attributes only.</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;a href="link"&gt;. . .&lt;/a&gt;</td>
+                <td class="nametable">Link</td>
+                <td>It is a hyperlink, which is used to link from one page to another.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;body&gt;. . .&lt;/body&gt;</td>
+                <td class="nametable">Body</td>
+                <td>Document's Body. It contains all of HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, and many more!</td> 
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;footer&gt;. . .&lt;/footer&gt;</td>
+                <td class="nametable">Footer</td>
+                <td>The content at the bottom of the subject information. <br>It contains information such as; <span class="bolds">Contact Information, Copyright Information, Term of Use, Site Map, Reference to Top of Page Links, etc</span>.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;article&gt;. . .&lt;/article&gt;</td>
+                <td class="nametable">Article</td>
+                <td>Specifies independent, self-contained content. It holds content that makes sense on its own. It will help someone with screen reader to understand where the aricle content begins and ends.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;aside&gt;. . .&lt;/aside&gt;</td>
+                <td class="nametable">Aside</td>
+                <td>It used to mark additional information that can enhance another element, but it not required in order to understand the main content. <br>Some common uses: <span class="bolds">Bibliographies, endnotes, comments, pull quotes, editorial sidebars, additional information, etc.</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;audio controls&gt; &lt;source src="link.mp3" type="audio/mp3"&gt; &lt;/audio&gt;</td>
+                <td class="nametable">Audio</td>
+                <td>It is used to embed sound content in a document, such as music or other audio streams.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;button&gt;. . .&lt;/button&gt;</td>
+                <td class="nametable">Button</td>
+                <td>Clickable button.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;caption&gt;. . .&lt;/caption&gt;</td>
+                <td class="nametable">Caption</td>
+                <td>Table of caption. <br><span class="bolds">Must be inserted after the &lt;table&gt; tag.</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;div&gt;. . .&lt;/div&gt;</td>
+                <td class="nametable">Division</td>
+                <td>A division or a section in an HTML document. It is used as a container for HTML elements - which is then styled with CSS.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;em&gt;. . .&lt;/em&gt;</td>
+                <td class="nametable">Emphasized Text</td>
+                <td>It is to emphasized text and will typically displayed in <span class="stands">italic</span>.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;embed type="animation.gif" src="link.gif"&gt;. . .&lt;/embed&gt;</td>
+                <td class="nametable">Embed</td>
+                <td>To incorporate media content into a page, which then can embed any media content including <span class="bolds">videos, audio files, and gifs from an external source.</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;figure&gt;. . .&lt;/figure&gt;</td>
+                <td class="nametable">Figure</td>
+                <td>Is an element used to encapsulate media such as <span class="bolds">images, illustrations, diagrams, code snipper, etc.</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;figcation&gt;. . .&lt;/figcaption&gt;</td>
+                <td class="nametable">Figure Caption</td>
+                <td>Is an element used to describe (or add caption) the media in the &lt;figure&gt; tag. Can be placed as the first or last child of the &lt;figure&gt; tag.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;h1&gt;. . .&lt;/h1&gt; to &lt;h6&gt;. . .&lt;/h6&gt;</td>
+                <td class="nametable">Headings</td>
+                <td>HTML headings which is similar to heading in other types of media. <br>There are <span class="bolds">six different headings tag (h1 to h6)</span>. &lt;h1&gt; defines the most important heading, whereas &lt;h6&gt; defines the least important heading.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;header&gt;. . .&lt;/header&gt;</td>
+                <td class="nametable">Header</td>
+                <td>It is a container for either navigational links or introductory content containing &lt;h1&gt; to &lt;h6&gt; headings, logo or icon, and authorship information.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;img src="img.jpg" alt="accessible text for the image"&gt;</td>
+                <td class="nametable">Image</td>
+                <td>Allows you to adds an image to a web page. Images are not technically inserted into a web page; images are linked to a web pages. &lt;img&gt; is a self-closing tag.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;main&gt;. . .&lt;/main&gt;</td>
+                <td class="nametable">Main</td>
+                <td>Encapsulate the dominant content within a web page. The content inside should be unique to the document. It should not contain any content that is repeated across documents. <br>The &lt;main&gt; element contains: <span class="bolds">&lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt;</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;nav&gt;. . .&lt;/nav&gt;</td>
+                <td class="nametable">Navigational Links</td>
+                <td>A block of navigation links such as menus and tables of content. It is intended only for major blocks of navigational links.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;ol&gt;. . .&lt;/ol&gt;</td>
+                <td class="nametable">Ordered List</td>
+                <td>Displayed content in an easy-to-read list. It can be numerical or alphabetical.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;ul&gt;. . .&lt;/ul&gt;</td>
+                <td class="nametable">Unordered List</td>
+                <td>Similar to Ordered List, except that each list item have no particular order. Unordered List outlines individual list item with a Bullet Point.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;li&gt;. . .&lt;/li&gt;</td>
+                <td class="nametable">List Item</td>
+                <td>Used inside Order List (&lt;ol&gt;), Unorder List (&lt;ul&gt;), and in menu lists (&lt;menu&gt;).</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;p&gt;. . .&lt;/p&gt;</td>
+                <td class="nametable">Paragraph</td>
+                <td>Paragraph of text. It is a <span class="stands">block-level elements</span> and will automatically close if another block-level element is parsed before the closing tag</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;section&gt;. . .&lt;/section&gt;</td>
+                <td class="nametable">Section</td>
+                <td>Elemets in a document, such as: <span class="bolds">chapters, headings, or any other area of document with the same theme</span>.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;span&gt;. . .&lt;/span&gt;</td>
+                <td class="nametable">Span</td>
+                <td>A section in a document. It is best to use this element when you want to target a specific piece of content.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;strong&gt;. . .&lt;/strong&gt;</td>
+                <td class="nametable">Strong</td>
+                <td>Making text with strong importance. The content inside is typically displayed in <span class="bolds">bold</span>.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;video src="video.mp4" controls&gt;. . .&lt;/video&gt;</td>
+                <td class="nametable">Video</td>
+                <td>To embed video content in a document, such as a movie clip or other video stream, makes it clear that a developer is attempting to display a video to the user.</td>
+            </tr>
+            <tr>
+                <th colspan="3">HTML Tables</th>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;table&gt;. . .&lt;/table&gt;</td>
+                <td class="nametable">Table</td>
+                <td>HTML Table. It consist of one &lt;table&gt; element and one or more <span class="bolds">&lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;</span> element. <br>An HTML table may also include <span class="bolds">&lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt;</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;thead&gt;. . .&lt;/thead&gt;</td>
+                <td class="nametable">Table Head</td>
+                <td>Tag used to group header content in an HTML table. This will make it easier to read and manage if the table is sectioned off.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;tbody&gt;. . .&lt;/tbody&gt;</td>
+                <td class="nametable">Table Body</td>
+                <td>Tag used to group body content in an HTML table. This will make it easier to read and manage if the table is sectioned off. The elemet should contain all of the tables data.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;tfoot&gt;. . .&lt;/tfoot&gt;</td>
+                <td class="nametable">Table Footer</td>
+                <td>Tag used to group footer content in an HTML table. The bottom part of a long table. Footer often used to contain sums, differences, and other data result.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;tr&gt;. . .&lt;/tr&gt;</td>
+                <td class="nametable">Table Rows</td>
+                <td>A row in an HTML table.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;th&gt;. . .&lt;/th&gt;</td>
+                <td class="nametable">Table Headings</td>
+                <td>A header cell in an HTML table, it contains header information. The text in &lt;th&gt; elements are bold and centered by default.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;td&gt;. . .&lt;/td&gt;</td>
+                <td class="nametable">Table Data</td>
+                <td>A standard data cell in an HTML table, it contains data. The text are regular and left-aligned by default.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;th colspan="number"&gt;. . .&lt;/th&gt;</td>
+                <td class="nametable">Columns Spanning</td>
+                <td>Number of columns a header cell should span. The value attributes ("number") must be a positive number, it specifies the number of columns that the cell fills. <br>This element attributed to <span class="bolds">&lt;th&gt; and &lt;td&gt; element.</span></td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;th rowspan="number"&gt;. . .&lt;/th&gt;</td>
+                <td class="nametable">Rows Spanning</td>
+                <td>Number of rows a header cell should span. The value attributes ("number") must be a positive number, it specifies the number of rows that the cell fills. <br>This element attributed to <span class="bolds">&lt;th&gt; and &lt;td&gt; element.</td>
+            </tr>
+            <tr>
+                <td class="tagtable">&lt;th scope="col"&gt;. . .&lt;/th&gt;</td>
+                <td class="nametable">Scope</td>
+                <td>It specifies whether a header cell is a header for a column, row, or group of columns or rows. It has no visual effect in ordinary web browsers, but can be used by screen readers.</td>
+            </tr>
+            
+        </tbody>
+
+        </table>        
+    </div>
+
+</body>
+</html>
